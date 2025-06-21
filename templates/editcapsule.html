@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Edit Capsule{% endblock %}
+{% block start %}
+<h2 class="text-center text-2xl font-bold text-gray-800">Edit Your Capsule</h2>
+<div class="flex items-center justify-center">
+  <form method="POST" enctype="multipart/form-data"
+        class="w-full max-w-md bg-white p-8 rounded-xl shadow-md space-y-6 font-sans">
+    
+    {% csrf_token %}
+    <style>
+      input, textarea, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border: 1px solid black; /* Ensures the border is black by default */
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      input:focus, textarea:focus, select:focus {
+        outline: none;
+        border: 1.5px solid #2563eb;
+        box-shadow: 0 0 4px #2563eb55;
+      }
+    </style>
+
+    {{ form.as_p }}
+
+    <button type="submit"
+            class="bg-blue-600 text-white font-medium py-2 px-4 w-full rounded hover:bg-blue-700 transition">
+      Save Changes
+    </button>
+  </form>
+</div>
+{% endblock %}

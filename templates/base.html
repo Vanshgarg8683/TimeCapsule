@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Time Capsule{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 text-gray-800">
+
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">Time Capsule</h1>
+    {% if request.user.is_authenticated %}
+        <a href="/mycapsules" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">My Capsules</a>
+        <a href="/capsule" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Schedule Another Capsule</a>
+      <a href="/logout" class="text-red-600 font-semibold hover:underline">Log Out</a>
+    {% endif %}
+  </nav>
+
+  <main class="max-w-xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-xl">
+    {% block start %}{% endblock %}
+  </main>
+
+</body>
+</html>

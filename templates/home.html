@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block start %}
+<div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100">
+  <div class="bg-white p-10 rounded-xl shadow-lg text-center max-w-xl">
+    <h2 class="text-3xl font-extrabold text-gray-800 mb-4">Welcome to the Time Capsule Project</h2>
+    <p class="text-gray-600 mb-6">Preserve your thoughts, memories, and goals for the future.</p>
+    <div class="space-x-4">
+      <a href="/login" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">Login</a>
+      <a href="/registration" class="bg-green-600 text-white px-5 py-2 rounded-lg shadow hover:bg-green-700 transition">Register</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
