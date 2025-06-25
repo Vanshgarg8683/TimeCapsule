@@ -2,6 +2,16 @@
 
 A Django web app that allows users to write and schedule messages to their future selves via email.
 
+## 📸 Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
+
+### Create Capsule
+![Create](screenshots/submitcapsule.png)
+
+### Edit or Delete Your Capsule
+![Edit or Delete](screenshots/mycapsule.png)
 ## 🚀 Features
 
 - Create, edit, and delete time capsules
@@ -24,3 +34,4 @@ A Django web app that allows users to write and schedule messages to their futur
    ```bash
    git clone https://github.com/Vanshgarg8683/TIMECAPSULE.git
    cd TIMECAPSULE
+
