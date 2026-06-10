@@ -2,7 +2,6 @@
 
 A Django web app that allows users to write and schedule messages to their future selves via email.
 
-
 ## 🚀 Features
 
 - Create, edit, and delete time capsules
